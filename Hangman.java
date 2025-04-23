@@ -73,6 +73,8 @@ public class Hangman {
 
                 else if (playAgain.equals("n")) {
                     System.out.println("Thanks for playing. Bye!");
+                    input.close();
+                    return;
                 }
 
                 else {
@@ -80,8 +82,6 @@ public class Hangman {
                     continue;
                 }
             }
-
-            input.close();
         }
     }
 
